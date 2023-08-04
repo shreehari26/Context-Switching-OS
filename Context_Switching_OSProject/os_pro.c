@@ -1,17 +1,3 @@
-/**********************    Project title:Context switching  *****************************
-
-Group Members:
-
-[1] AU1741064 Rajvee Kadchha
-[2] AU1741078 Rajvi Patel
-
-Assumptions:
-
- -Arrival time of process is zero.
- -Process 2 is I/O bound process.
- -2 instructions run in one quantum(q=2).
- -all processes are independant.
-*****************************************************************************************/
 #include <gtk/gtk.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,10 +8,10 @@ Assumptions:
 #include "queue_implementation.h"
 
 
-bool res[4]={false,false,false,false}; 				/*For buttons in GTK*/ 
+bool res[4]={false,false,false,false}; 				
 int count=0;
-GtkWidget *pcb1; 									/*To display in GUI PCB state before execution*/
-GtkWidget *pcb2; 									/*PCB state after execution*/
+GtkWidget *pcb1; 									
+GtkWidget *pcb2; 									
 
 /*GUI button to lock resource*/
 int occ_1(GtkWidget *widget,gpointer   data)
