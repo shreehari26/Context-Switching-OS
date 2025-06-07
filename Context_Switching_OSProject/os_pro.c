@@ -7,6 +7,7 @@
 #include "stack_implementation.h"
 #include "queue_implementation.h"
 
+#define "LENGTH" 50
 
 bool res[4]={false,false,false,false}; 				
 int count=0;
